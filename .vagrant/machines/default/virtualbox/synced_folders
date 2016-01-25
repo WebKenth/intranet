@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/intranet":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/intranet","hostpath":"/Users/TarGewz/Code/intranet","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/TarGewz/Code/intranet","disabled":false,"__vagrantfile":true}}}
