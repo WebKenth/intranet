@@ -1,2 +1,17 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+body{
+	background-color: white;
+	font-family: lato;
+}
+.page-wrapper{
+    padding-top: 20px !important;
+}
+#wrapper{
+	background-color: #f8f8f8;
+}
+#side-menu{
+	margin-top: 7px;
+}
+.sidebar ul li {
+    border-bottom: 0;
+}

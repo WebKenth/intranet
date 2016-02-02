@@ -23,10 +23,19 @@
  */
 
 Route::group(['middleware' => 'web'], function () {
+
+		Route::get('/', 'PageController@index');
+
 		Route::auth();
 
-		Route::get('/home', 'HomeController@index');
-		Route::get('/', function () {
-				return view('welcome');
+		// With sidebar
+		Route::get('/dashboard', 'DashboardController@index');
+		Route::get('/news', 'DashboardController@news');
+		Route::get('/barcontrol', 'DashboardController@barcontrol');
+		Route::get('/inbox', 'DashboardController@inbox');
+		Route::get('/accounting', 'DashboardController@accounting');
+
+		Route::get('/user/{user}', function (App\User $user) {
+				return $user;
 			});
 	});
